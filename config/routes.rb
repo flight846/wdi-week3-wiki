@@ -7,12 +7,13 @@ Rails.application.routes.draw do
   get "aeroplane/page"
   
   get "/aeroplane", to: 'aeroplane#index'
+  # If page !== 1 || page !== 2 || page !== 3 || page !== 4 || page !== 5 return page
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'aeroplane#page'
+  root 'static#about'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
