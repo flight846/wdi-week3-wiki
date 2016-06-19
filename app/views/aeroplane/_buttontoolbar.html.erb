@@ -1,9 +1,19 @@
-<div class="btn-toolbar" role="toolbar" aria-label="...">
-    <div class="btn-group" role="group" aria-label="...">
-        <button type="button" class="btn btn-default"><a href="/aeroplane?page=1">1</a></button>
-        <button type="button" class="btn btn-default"><a href="/aeroplane?page=2">2</a></button>
-        <button type="button" class="btn btn-default"><a href="/aeroplane?page=3">3</a></button>
-        <button type="button" class="btn btn-default"><a href="/aeroplane?page=4">4</a></button>
-        <button type="button" class="btn btn-default"><a href="/aeroplane?page=5">5</a></button>
-    </div>
-</div>
+<nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="<%= active_class('/aeroplane?page=1') %>"><a href="aeroplane?page=1">1</a></li>
+    <li class="<%= active_class('/aeroplane?page=2') %>"><a href="aeroplane?page=2">2</a></li>
+    <li class="<%= active_class('/aeroplane?page=3') %>"><a href="aeroplane?page=3">3</a></li>
+    <li class="<%= active_class('/aeroplane?page=4') %>"><a href="aeroplane?page=4">4</a></li>
+    <li class="<%= active_class('/aeroplane?page=5') %>"><a href="aeroplane?page=5">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
